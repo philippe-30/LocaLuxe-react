@@ -13,7 +13,6 @@ const Container = () => {
                         <img key={index} src={image} alt={`Image ${index + 1}`} />
                     ))}
                     <p>Type :{offre.type}. Prix :  {offre.prix} €</p>
-                    {/* <p>Prix : {offre.prix} €</p> */}
                     <p>Description : {offre.description}</p>
                 </div>
             ))}
