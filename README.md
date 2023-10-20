@@ -11,7 +11,7 @@ Cette application permettant aux utilisateurs de visualiser des emplacements / o
 
 
 ### Clone le projet: 
-    ` git clone de projet: [https://github.com/philippe-30/LocaLuxe-react.git]`
+    ` git clone : [https://github.com/philippe-30/LocaLuxe-react.git]`
 
 ### Installer bibiliothéque react : 
     `npm install`
