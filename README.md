@@ -9,10 +9,10 @@ Cette application permettant aux utilisateurs de visualiser des emplacements / o
     • enregistrer les offres préférées
 
 
-# clone le projet: 
+# Clone le projet: 
 ` git clone de projet: [https://github.com/philippe-30/LocaLuxe-react.git]`
 
-## installer bibiliothéque react : 
+## Installer bibiliothéque react : 
 `npm install`
 
 ### Lancer le serveur : 
@@ -21,4 +21,6 @@ Cette application permettant aux utilisateurs de visualiser des emplacements / o
 ### Runs l'app :
 ouvert [http://localhost:3000](http://localhost:3000) .
 
-### lien Figma: `https://www.figma.com/file/OzODF1zlBdAJwxoggJyh5S/LocaLuxe?type=design&node-id=0-1&mode=design&t=X6n5hCMs8tPEDpEL-0`
+### Lien de maquette Figma: 
+[https://www.figma.com/file/OzODF1zlBdAJwxoggJyh5S/LocaLuxe?type=design&node-id=0-1&mode=design&t=X6n5hCMs8tPEDpEL-0]
+
