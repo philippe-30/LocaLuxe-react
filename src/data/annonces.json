@@ -1,0 +1,546 @@
+{
+  "offres": [
+    {
+      "id": 1,
+      "type": "Appartement",
+      "titre": "Bel appartement au centre-ville",
+      "description": "Appartement spacieux avec 2 chambres et vue sur la rivière.",
+      "localisation": {
+        "latitude": 48.8588443,
+        "longitude": 2.2943506
+      },
+      "prix": 1200,
+      "surface": 80,
+      "chambres": 2,
+      "sallesDeBain": 1,
+      "images": [
+        "https://file.bienici.com/photo/rodacom-5293498_photos.rodacom.net_resize_s3_standard_19c1ed49f8edeb3f9c68a658ffbaa1e230e5fb31.jpg?width=600&height=370&fit=cover",
+        "image.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 2,
+      "type": "Maison",
+      "titre": "Maison",
+      "description": "Maison entièrement équipée pour vos besoins professionnels.",
+      "localisation": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
+      "prix": 50,
+      "surface": 25,
+      "chambres": 0,
+      "sallesDeBain": 0,
+      "images": [
+        "https://file.bienici.com/photo/immo-facile-3368871_media.immo-facile.com_office10_stepahen_plaza_chartres_catalog_images_pr_p_3_3_6_8_8_7_1_3368871a.jpg_DATEMAJ_20_10_2021-10_08_38?width=600&height=370&fit=cover",
+        "image5.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 3,
+      "type": "Maison",
+      "titre": "Belle maison de campagne",
+      "description": "Maison spacieuse avec grand jardin et piscine privée.",
+      "localisation": {
+        "latitude": 48.8047,
+        "longitude": 2.1204
+      },
+      "prix": 2500,
+      "surface": 200,
+      "chambres": 4,
+      "sallesDeBain": 3,
+      "images": [
+        "image6.jpg",
+        "image7.jpg",
+        "image8.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 4,
+      "type": "Bureau",
+      "titre": "Bureau en centre-ville",
+      "description": "Espace de bureau moderne avec vue panoramique.",
+      "localisation": {
+        "latitude": 43.6108,
+        "longitude": 3.8767
+      },
+      "prix": 800,
+      "surface": 50,
+      "chambres": 0,
+      "sallesDeBain": 1,
+      "images": [
+        "image9.jpg",
+        "image10.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 5,
+      "type": "Appartement",
+      "titre": "Appartement de luxe en bord de mer",
+      "description": "Appartement moderne avec vue sur l'océan et accès à la plage.",
+      "localisation": {
+        "latitude": 43.2965,
+        "longitude": 5.3695
+      },
+      "prix": 1800,
+      "surface": 100,
+      "chambres": 3,
+      "sallesDeBain": 2,
+      "images": [
+        "image11.jpg",
+        "image12.jpg",
+        "image13.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 6,
+      "type": "Maison",
+      "titre": "Maison  polyvalent",
+      "description": "Maison idéal pour diverses activités.",
+      "localisation": {
+        "latitude": 48.8914,
+        "longitude": 2.2403
+      },
+      "prix": 1200,
+      "surface": 150,
+      "chambres": 0,
+      "sallesDeBain": 2,
+      "images": [
+        "image14.jpg",
+        "image15.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 7,
+      "type": "Maison",
+      "titre": "Charmante maison de ville",
+      "description": "Maison rénovée avec cour intérieure et garage.",
+      "localisation": {
+        "latitude": 48.7852,
+        "longitude": 2.1676
+      },
+      "prix": 1600,
+      "surface": 120,
+      "chambres": 3,
+      "sallesDeBain": 2,
+      "images": [
+        "image16.jpg",
+        "image17.jpg",
+        "image18.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 8,
+      "type": "Bureau",
+      "titre": "Bureau moderne en plein centre-ville",
+      "description": "Espace de bureau entièrement équipé avec vue panoramique sur la ville.",
+      "localisation": {
+        "latitude": 48.8599,
+        "longitude": 2.3305
+      },
+      "prix": 1000,
+      "surface": 70,
+      "chambres": 0,
+      "sallesDeBain": 1,
+      "images": [
+        "image19.jpg",
+        "image20.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 9,
+      "type": "Appartement",
+      "titre": "Appartement en centre-ville historique",
+      "description": "Appartement de charme dans un quartier historique.",
+      "localisation": {
+        "latitude": 48.8708,
+        "longitude": 2.3710
+      },
+      "prix": 950,
+      "surface": 60,
+      "chambres": 1,
+      "sallesDeBain": 1,
+      "images": [
+        "image21.jpg",
+        "image22.jpg",
+        "image23.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 10,
+      "type": "Maison",
+      "titre": "Maison en périphérie",
+      "description": "Maison commercial idéal pour démarrer une entreprise.",
+      "localisation": {
+        "latitude": 43.6032,
+        "longitude": 1.4426
+      },
+      "prix": 500,
+      "surface": 80,
+      "chambres": 0,
+      "sallesDeBain": 1,
+      "images": [
+        "image24.jpg",
+        "image25.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 11,
+      "type": "Maison",
+      "titre": "Belle maison en Provence",
+      "description": "Maison provençale avec piscine et vue sur les vignobles.",
+      "localisation": {
+        "latitude": 43.529742,
+        "longitude": 5.447427
+      },
+      "prix": 1800,
+      "surface": 150,
+      "chambres": 4,
+      "sallesDeBain": 2,
+      "images": [
+        "image26.jpg",
+        "image27.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 12,
+      "type": "Appartement",
+      "titre": "Appartement au cœur de Paris",
+      "description": "Appartement élégant près de la Tour Eiffel et des Champs-Élysées.",
+      "localisation": {
+        "latitude": 48.8588443,
+        "longitude": 2.2943506
+      },
+      "prix": 1600,
+      "surface": 90,
+      "chambres": 2,
+      "sallesDeBain": 2,
+      "images": [
+        "image28.jpg",
+        "image29.jpg",
+        "image30.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 13,
+      "type": "Chalet",
+      "titre": "Chalet de montagne en Savoie",
+      "description": "Chalet alpin avec vue panoramique sur les montagnes.",
+      "localisation": {
+        "latitude": 45.4150,
+        "longitude": 6.6340
+      },
+      "prix": 2200,
+      "surface": 120,
+      "chambres": 3,
+      "sallesDeBain": 2,
+      "images": [
+        "image31.jpg",
+        "image32.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 14,
+      "type": "Appartement",
+      "titre": "Appartement à Pau",
+      "description": "Appartement récemment rénové avec vue sur les Pyrénées.",
+      "localisation": {
+        "latitude": 43.2965,
+        "longitude": -0.3701
+      },
+      "prix": 900,
+      "surface": 70,
+      "chambres": 2,
+      "sallesDeBain": 1,
+      "images": [
+        "image26.jpg",
+        "image27.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 15,
+      "type": "Maison",
+      "titre": "Belle maison à Lons",
+      "description": "Maison de charme avec jardin et piscine à Lons.",
+      "localisation": {
+        "latitude": 43.3297,
+        "longitude": -0.4318
+      },
+      "prix": 1600,
+      "surface": 150,
+      "chambres": 4,
+      "sallesDeBain": 2,
+      "images": [
+        "image28.jpg",
+        "image29.jpg",
+        "image30.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 16,
+      "type": "Maison",
+      "titre": "Maison à Pau Nord",
+      "description": "Grande Maison moderne au cœur de Pau Nord.",
+      "localisation": {
+        "latitude": 43.3223,
+        "longitude": -0.3669
+      },
+      "prix": 250000,
+      "surface": 163,
+      "chambres": 4,
+      "sallesDeBain": 2,
+      "images": [
+        "image31.jpg",
+        "image32.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 17,
+      "type": "Appartement",
+      "titre": "Appartement à Lons",
+      "description": "Appartement lumineux avec balcon à Lons.",
+      "localisation": {
+        "latitude": 43.3250,
+        "longitude": -0.4315
+      },
+      "prix": 800,
+      "surface": 55,
+      "chambres": 1,
+      "sallesDeBain": 1,
+      "images": [
+        "image33.jpg",
+        "image34.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 18,
+      "type": "Local commercial",
+      "titre": "Espace commercial à Pau",
+      "description": "Local commercial idéal pour les entreprises à Pau.",
+      "localisation": {
+        "latitude": 43.3077,
+        "longitude": -0.3754
+      },
+      "prix": 1200,
+      "surface": 100,
+      "chambres": 0,
+      "sallesDeBain": 2,
+      "images": [
+        "image35.jpg",
+        "image36.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 19,
+      "type": "Maison",
+      "titre": "Maison à Lourdes",
+      "description": "Maison spacieuse avec grand jardin à Lourdes.",
+      "localisation": {
+        "latitude": 43.0978,
+        "longitude": -0.0452
+      },
+      "prix": 1400,
+      "surface": 180,
+      "chambres": 3,
+      "sallesDeBain": 2,
+      "images": [
+        "image37.jpg",
+        "image38.jpg",
+        "image39.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 20,
+      "type": "Appartement",
+      "titre": "Appartement à Orthez",
+      "description": "Appartement moderne au centre-ville d'Orthez.",
+      "localisation": {
+        "latitude": 43.4891,
+        "longitude": -0.7686
+      },
+      "prix": 950,
+      "surface": 65,
+      "chambres": 2,
+      "sallesDeBain": 1,
+      "images": [
+        "image40.jpg",
+        "image41.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 21,
+      "type": "Bureau",
+      "titre": "Bureau à Bordeaux",
+      "description": "Espace de bureau élégant à Bordeaux.",
+      "localisation": {
+        "latitude": 44.8374,
+        "longitude": -0.5811
+      },
+      "prix": 1200,
+      "surface": 70,
+      "chambres": 0,
+      "sallesDeBain": 1,
+      "images": [
+        "image42.jpg",
+        "image43.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 22,
+      "type": "Appartement",
+      "titre": "Appartement à Dax",
+      "description": "Appartement lumineux avec balcon à Dax.",
+      "localisation": {
+        "latitude": 43.7102,
+        "longitude": -1.0688
+      },
+      "prix": 800,
+      "surface": 60,
+      "chambres": 1,
+      "sallesDeBain": 1,
+      "images": [
+        "image44.jpg",
+        "image45.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 23,
+      "type": "Local commercial",
+      "titre": "Espace commercial à Lourdes",
+      "description": "Local commercial idéal pour les entreprises à Lourdes.",
+      "localisation": {
+        "latitude": 43.0958,
+        "longitude": -0.0503
+      },
+      "prix": 1100,
+      "surface": 80,
+      "chambres": 0,
+      "sallesDeBain": 2,
+      "images": [
+        "image46.jpg",
+        "image47.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 24,
+      "type": "Maison",
+      "titre": "Maison à Limoges",
+      "description": "Belle maison avec jardin à Limoges.",
+      "localisation": {
+        "latitude": 45.8358,
+        "longitude": 1.2624
+      },
+      "prix": 1300,
+      "surface": 150,
+      "chambres": 3,
+      "sallesDeBain": 2,
+      "images": [
+        "image48.jpg",
+        "image49.jpg",
+        "image50.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 25,
+      "type": "Appartement",
+      "titre": "Appartement à Poitiers",
+      "description": "Appartement moderne au centre de Poitiers.",
+      "localisation": {
+        "latitude": 46.5802,
+        "longitude": 0.3400
+      },
+      "prix": 950,
+      "surface": 70,
+      "chambres": 2,
+      "sallesDeBain": 1,
+      "images": [
+        "image51.jpg",
+        "image52.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 26,
+      "type": "Maison",
+      "titre": "Maison à Nantes",
+      "description": "Maison spacieuse avec jardin à Nantes.",
+      "localisation": {
+        "latitude": 47.2184,
+        "longitude": -1.5536
+      },
+      "prix": 1500,
+      "surface": 180,
+      "chambres": 4,
+      "sallesDeBain": 3,
+      "images": [
+        "image53.jpg",
+        "image54.jpg",
+        "image55.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 27,
+      "type": "Appartement",
+      "titre": "Appartement à Nancy",
+      "description": "Appartement lumineux au cœur de Nancy.",
+      "localisation": {
+        "latitude": 48.6921,
+        "longitude": 6.1844
+      },
+      "prix": 850,
+      "surface": 60,
+      "chambres": 1,
+      "sallesDeBain": 1,
+      "images": [
+        "image56.jpg",
+        "image57.jpg"
+      ],
+      "favori": false
+    },
+    {
+      "id": 28,
+      "type": "Maison",
+      "titre": "Maison à Lille",
+      "description": "Maison rénovée avec jardin à Lille.",
+      "localisation": {
+        "latitude": 50.6293,
+        "longitude": 3.0573
+      },
+      "prix": 1400,
+      "surface": 130,
+      "chambres": 3,
+      "sallesDeBain": 2,
+      "images": [
+        "image58.jpg",
+        "image59.jpg",
+        "image60.jpg"
+      ],
+      "favori": false
+    }
+  ]
+}
