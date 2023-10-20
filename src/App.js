@@ -1,7 +1,7 @@
 import './App.css';
 // import Container from './components/Container/Container';
 // import MapComponent from './components/Map/MapComponent';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Accueil from './pages/Accueil';
 import About from './pages/About';
