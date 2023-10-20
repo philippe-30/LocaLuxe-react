@@ -14,10 +14,10 @@ Cette application permettant aux utilisateurs de visualiser des emplacements / o
 ` git clone de projet: [https://github.com/philippe-30/LocaLuxe-react.git]`
 
 ### Installer bibiliothéque react : 
-`npm install`
+• `npm install`
 
 ### Lancer le serveur : 
-`npm start`
+• `npm start`
 
 ### Runs l'app :
 ouvert [http://localhost:3000](http://localhost:3000) .
