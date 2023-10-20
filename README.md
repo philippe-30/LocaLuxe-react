@@ -1,6 +1,7 @@
 # Projet LocaLuxe-react: 
 L’objectif du projet est de créer une application avec ReactJs.
 Cette application permettant aux utilisateurs de visualiser des emplacements / offres (appartements à louer, salles, commerces,...) sur une carte avec une liste synchronisée et filtrable.
+
  ### Pour les utilisateurs
 	On souhaite les fonctionnalités suivantes : 
     • visualiser les offres sous forme de liste
@@ -9,10 +10,10 @@ Cette application permettant aux utilisateurs de visualiser des emplacements / o
     • enregistrer les offres préférées
 
 
-# Clone le projet: 
+### Clone le projet: 
 ` git clone de projet: [https://github.com/philippe-30/LocaLuxe-react.git]`
 
-## Installer bibiliothéque react : 
+### Installer bibiliothéque react : 
 `npm install`
 
 ### Lancer le serveur : 
