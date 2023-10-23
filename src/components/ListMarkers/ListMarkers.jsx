@@ -7,10 +7,8 @@ const ListMarkers = ({ locationVisible }) => {
 
     return (
         <div className='offre' >
-            {locationVisible.map((offreA) => (
-                // <div key={offre.id}>{offre.titre}</div>
-                <Container key={offreA.id} locationVisible={offreA} />
-              
+            {locationVisible.map((offre) => (
+                <Container key={offre.id} locationVisible={offre} />
             ))}
         </div>
     );

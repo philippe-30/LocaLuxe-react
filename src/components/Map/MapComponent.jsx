@@ -1,16 +1,13 @@
 import React, { useState, useEffect  } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useMapEvents } from 'react-leaflet';
-// import offres from '../../data/annonces.json';
 import L from 'leaflet';
-// import { Context } from "../../pages/Accueil";
 import "leaflet/dist/leaflet.css";
 
 
 
 
 const MapComponent = ({ offres, locationVisible, setLocationVisible }) => {
-  // const [locationVisible, setLocationVisible] = useContext(Context);
 
   const [map, setMap] = useState(null);
 
@@ -45,15 +42,6 @@ const chaletIcon = L.icon({
     setLocationVisible(visibleMarkers);
   };
 
-
-  // const filterMarkers = useCallback((map) => {
-  //   const visibleMarkers = offres.filter(offre => map.getBounds().contains([offre.localisation.latitude, offre.localisation.longitude]));
-  //   setLocationVisible(visibleMarkers);
-  // }, [offres, setLocationVisible]);
-
-  
-
-
   useEffect(() => {
     if (map) {
       map.on('zoomend', () => filterMarkers(map));
@@ -73,83 +61,10 @@ const CurrentMap = () => {
 
   return null;
 };
-
-
-  // const [zoom, setZoom] = useState(6);
-  // const [offres, setOffres] = useState([]);
-
-  // useEffect(() => {
-  //   // Récupérez les offres du fichier JSON
-  //   setOffres(annonces.offres);
-  // }, []);
-
-  // const handleZoomChange = (newZoom) => {
-  //   setZoom(newZoom);
-  // };
-
-
-  // function filtreObjetMarker(map) {
-  //   const markerTab = [];
-  //   const appartVisible = [];
-  //   map.eachLayer(function (marker) {
-  //     if (typeof marker.getLatLng === "function") {
-  //       if (map.getBounds().contains(marker.getLatLng())) {
-  //         if (marker?.options?.icon?.options) {
-  //           markerTab.push(marker);
-  //         }
-  //       }
-  //     }
-  //   });
-
-  // function filtreObjetMarker(map) {
-  //   const markerTab = [];
-  //   const appartVisible = [];
-  //   map.eachLayer(function (marker) {
-  //     if (typeof marker.getLatLng === "function") {
-  //       if (map.getBounds().contains(marker.getLatLng())) {
-  //         if (marker?.options?.icon?.options) {
-  //           markerTab.push(marker);
-  //         }
-  //       }
-  //     }
-  //   });
-
-  //   offres.forEach(appart => {
-  //     markerTab.forEach(marker => {
-  //       if (marker.options.icon.options.id === appart.id) {
-  //         appartVisible.push(appart);
-  //       }
-  //     })
-  //   });
-  //   console.log("Liste appart: ", appartVisible);
-  //   // console.log(markerTab);
-  //   setLocationVisible(appartVisible);
-  //   console.log("Locations:", locationVisible);
-  // }
-
-  // function ManageEvents() {
-  //   const map = useMap();
-
-  //   map.on('zoomend', () => {
-  //     handleZoomChange(map.getZoom());
-  //   });
-  // }
-
-  // // Filtrer les marqueurs visibles en fonction du niveau de zoom actuel
-  // const getVisibleMarkers = (zoomLevel) => {
-  //   return offres.filter((offre) => {
-  //     return offre.conditionZoom <= zoomLevel;
-  //   });
-  // };
-
-  // // const visibleMarkers = getVisibleMarkers(zoom);
-  // useEffect(() => {
-  //   // Assurez-vous d'appeler la fonction de filtrage ici si offres change
-  //   filterMarkers(map);
-  // }, [offres]);
+ 
 
   return (
-    <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: '600px', width: '80%' }} scrollWheelZoom={true}>
+    <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: '600px', width: '60%' }} scrollWheelZoom={true}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -170,9 +85,9 @@ const CurrentMap = () => {
           }
         >
           <Popup>
-            <strong>{offre.titre}</strong>
-            <br />
-            Type : {offre.type}
+            {/* <strong>{offre.titre}.</strong>
+            <br /> */}
+            <strong> {offre.type} </strong> 
             <br />
             Ville : {offre.ville}
             <br />

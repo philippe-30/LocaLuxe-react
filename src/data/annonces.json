@@ -29,12 +29,12 @@
         "longitude": 2.3522
       },
       "ville": "Paris",
-      "prix": 50,
-      "surface": 25,
-      "chambres": 0,
-      "sallesDeBain": 0,
+      "prix": 5000,
+      "surface": 225,
+      "chambres": 4,
+      "sallesDeBain": 1,
       "images": [
-        "../../../images/maison1.jpg"
+        "../../../images/maison13.jpg"
       ],
       "favori": false
     },
@@ -72,7 +72,7 @@
       "chambres": 0,
       "sallesDeBain": 1,
       "images": [
-        "image10.jpg"
+        "../../../images/bureau1.jpg"
       ],
       "favori": false
     },
@@ -148,7 +148,7 @@
       "chambres": 0,
       "sallesDeBain": 1,
       "images": [
-        "image20.jpg"
+        "../../../images/bureau2.jpg"
       ],
       "favori": false
     },
@@ -239,11 +239,11 @@
       },
       "ville": "Grenoble",
       "prix": 2200,
-      "surface": 120,
+      "surface": 40,
       "chambres": 3,
-      "sallesDeBain": 2,
+      "sallesDeBain": 1,
       "images": [
-        "image32.jpg"
+        "../../../images/chalet1.jpg"
       ],
       "favori": false
     },
@@ -338,7 +338,7 @@
       "chambres": 0,
       "sallesDeBain": 2,
       "images": [
-        "image36.jpg"
+        "../../../images/bureau4.jpg"
       ],
       "favori": false
     },
@@ -395,7 +395,7 @@
       "chambres": 0,
       "sallesDeBain": 1,
       "images": [
-        "image43.jpg"
+        "../../../images/bureau5.jpg"
       ],
       "favori": false
     },
@@ -433,7 +433,7 @@
       "chambres": 0,
       "sallesDeBain": 2,
       "images": [
-        "image47.jpg"
+        "../../../images/bureau6.jpg"
       ],
       "favori": false
     },
