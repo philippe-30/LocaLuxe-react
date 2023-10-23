@@ -1,12 +1,12 @@
+import React from 'react';
 import './App.css';
-// import Container from './components/Container/Container';
-// import MapComponent from './components/Map/MapComponent';
 // import Footer from './components/Footer/Footer';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Accueil from './pages/Accueil';
 import About from './pages/About';
 import SeConnecter from './pages/SeConnecter';
 import Contact from './pages/Contact';
+import Footer from './components/Footer/Footer';
 
 const router = createBrowserRouter(
   [
@@ -20,7 +20,7 @@ const router = createBrowserRouter(
     },
     {
       path: '/contact',
-      element: <Contact/>
+      element: <Contact />
     },
     {
       path: '/connexion',
@@ -32,14 +32,10 @@ const router = createBrowserRouter(
 function App() {
   return (
     <>
-    <div className='containerTotal'>
-      <RouterProvider router={router} />
-      {/* <main className='container'>
-        <MapComponent />
-        <Container />
-      </main> */}
-    </div>
-      {/* <Footer /> */}
+      <div className='containerTotal'>
+        <RouterProvider router={router} />
+      <Footer/>
+      </div>
     </>
   );
 }

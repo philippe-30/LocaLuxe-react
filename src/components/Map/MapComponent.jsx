@@ -1,25 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect  } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import annonces from '../../data/annonces.json';
+import { useMapEvents } from 'react-leaflet';
+// import offres from '../../data/annonces.json';
 import L from 'leaflet';
+// import { Context } from "../../pages/Accueil";
+import "leaflet/dist/leaflet.css";
+
+
+
+
+const MapComponent = ({ offres, locationVisible, setLocationVisible }) => {
+  // const [locationVisible, setLocationVisible] = useContext(Context);
+
+  const [map, setMap] = useState(null);
+
 
 // Créez des icônes personnalisées pour chaque type d'offre
 const maisonIcon = L.icon({
-  // iconUrl: 'https://img.lovepik.com/free-png/20211224/lovepik-house-png-image_400236441_wh300.png',
   iconUrl: '../../../images/house.png',
   iconSize: [20, 20],
   iconAnchor: [16, 32],
 });
 
 const appartementIcon = L.icon({
-  // iconUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZFAxHsjtfXYqQZFQ2jVxazJ9FNC7O6MCapzfPYzXrYRUJf_SEG1CFEm4XMcJo-snwtU&usqp=CAU',
   iconUrl: '../../../images/appartement.png',
   iconSize: [20, 20],
   iconAnchor: [16, 32],
 });
 const bureauIcon = L.icon({
   iconUrl: '../../../images/bureau.png',
-  // iconUrl: 'https://png.pngtree.com/thumb_back/fw800/background/20230702/pngtree-executive-red-leather-chair-in-a-professional-round-meeting-room-with-image_3743532.jpg',
   iconSize: [15, 15],
   iconAnchor: [16, 32],
 });
@@ -30,37 +39,149 @@ const chaletIcon = L.icon({
   iconAnchor: [16, 32],
 });
 
-const MapComponent = () => {
-  const [offres, setOffres] = useState([]);
+  // Fonction pour filtrer les marqueurs visibles en fonction de la carte
+  const filterMarkers = (map) => {
+    const visibleMarkers = offres.filter(offre => map.getBounds().contains([offre.localisation.latitude, offre.localisation.longitude]));
+    setLocationVisible(visibleMarkers);
+  };
+
+
+  // const filterMarkers = useCallback((map) => {
+  //   const visibleMarkers = offres.filter(offre => map.getBounds().contains([offre.localisation.latitude, offre.localisation.longitude]));
+  //   setLocationVisible(visibleMarkers);
+  // }, [offres, setLocationVisible]);
+
+  
+
+
   useEffect(() => {
-    // Récupérez les offres du fichier JSON
-    setOffres(annonces.offres);
-  }, []);
+    if (map) {
+      map.on('zoomend', () => filterMarkers(map));
+      map.on('moveend', () => filterMarkers(map));
+      filterMarkers(map);
+    }
+  }, [map, offres]);
+
+
+// Custom hook pour obtenir la carte actuelle
+const CurrentMap = () => {
+  const currentMap = useMapEvents({
+    load: () => setMap(currentMap),
+    zoomend: () => filterMarkers(currentMap),
+    moveend: () => filterMarkers(currentMap),
+  });
+
+  return null;
+};
+
+
+  // const [zoom, setZoom] = useState(6);
+  // const [offres, setOffres] = useState([]);
+
+  // useEffect(() => {
+  //   // Récupérez les offres du fichier JSON
+  //   setOffres(annonces.offres);
+  // }, []);
+
+  // const handleZoomChange = (newZoom) => {
+  //   setZoom(newZoom);
+  // };
+
+
+  // function filtreObjetMarker(map) {
+  //   const markerTab = [];
+  //   const appartVisible = [];
+  //   map.eachLayer(function (marker) {
+  //     if (typeof marker.getLatLng === "function") {
+  //       if (map.getBounds().contains(marker.getLatLng())) {
+  //         if (marker?.options?.icon?.options) {
+  //           markerTab.push(marker);
+  //         }
+  //       }
+  //     }
+  //   });
+
+  // function filtreObjetMarker(map) {
+  //   const markerTab = [];
+  //   const appartVisible = [];
+  //   map.eachLayer(function (marker) {
+  //     if (typeof marker.getLatLng === "function") {
+  //       if (map.getBounds().contains(marker.getLatLng())) {
+  //         if (marker?.options?.icon?.options) {
+  //           markerTab.push(marker);
+  //         }
+  //       }
+  //     }
+  //   });
+
+  //   offres.forEach(appart => {
+  //     markerTab.forEach(marker => {
+  //       if (marker.options.icon.options.id === appart.id) {
+  //         appartVisible.push(appart);
+  //       }
+  //     })
+  //   });
+  //   console.log("Liste appart: ", appartVisible);
+  //   // console.log(markerTab);
+  //   setLocationVisible(appartVisible);
+  //   console.log("Locations:", locationVisible);
+  // }
+
+  // function ManageEvents() {
+  //   const map = useMap();
+
+  //   map.on('zoomend', () => {
+  //     handleZoomChange(map.getZoom());
+  //   });
+  // }
+
+  // // Filtrer les marqueurs visibles en fonction du niveau de zoom actuel
+  // const getVisibleMarkers = (zoomLevel) => {
+  //   return offres.filter((offre) => {
+  //     return offre.conditionZoom <= zoomLevel;
+  //   });
+  // };
+
+  // // const visibleMarkers = getVisibleMarkers(zoom);
+  // useEffect(() => {
+  //   // Assurez-vous d'appeler la fonction de filtrage ici si offres change
+  //   filterMarkers(map);
+  // }, [offres]);
+
   return (
-    <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: '600px', width: '80%' }}>
+    <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: '600px', width: '80%' }} scrollWheelZoom={true}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      {offres.map((offre) => (
+       <CurrentMap />
+      {locationVisible.map((offre) => (
         <Marker
           key={offre.id}
-          position={[offre.localisation.latitude, offre.localisation.longitude]}
-          icon={offre.type === 'Maison' ? maisonIcon : offre.type === 'Appartement' ? appartementIcon : offre.type === 'Chalet' ? chaletIcon : bureauIcon}
+          position={[offre.localisation?.latitude || 0, offre.localisation?.longitude || 0]}
+          icon={
+            offre.type === 'Maison'
+              ? maisonIcon
+              : offre.type === 'Appartement'
+                ? appartementIcon
+                : offre.type === 'Chalet'
+                  ? chaletIcon
+                  : bureauIcon
+          }
         >
           <Popup>
             <strong>{offre.titre}</strong>
             <br />
             Type : {offre.type}
             <br />
-            Prix : {offre.prix} €
+            Ville : {offre.ville}
             <br />
-            Description : {offre.description}
+            Prix : {offre.prix} €
           </Popup>
         </Marker>
       ))}
     </MapContainer>
   );
-}
+};
 
 export default MapComponent;
