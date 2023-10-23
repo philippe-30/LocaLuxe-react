@@ -1,3 +1,21 @@
-.barre{
-    
+.imageOffre {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+.barre {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0;
+      flex-wrap: wrap;
+      /* width: 50%; */
 }
+
+.price {
+    font-family: 'Suez One';
+    font-size: 14;
+  }
