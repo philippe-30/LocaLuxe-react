@@ -69,7 +69,7 @@
       "ville": "Montpellier",
       "prix": 800,
       "surface": 50,
-      "chambres": 0,
+      "chambres": 1,
       "sallesDeBain": 1,
       "images": [
         "../../../images/bureau1.jpg"
@@ -107,7 +107,7 @@
       "ville": "Paris",
       "prix": 1200,
       "surface": 150,
-      "chambres": 0,
+      "chambres": 4,
       "sallesDeBain": 2,
       "images": [
         "../../../images/maison3.jpg"
@@ -145,7 +145,7 @@
       "ville": "Paris",
       "prix": 1000,
       "surface": 70,
-      "chambres": 0,
+      "chambres": 1,
       "sallesDeBain": 1,
       "images": [
         "../../../images/bureau2.jpg"
@@ -335,7 +335,7 @@
       "ville": "Pau",
       "prix": 1200,
       "surface": 100,
-      "chambres": 0,
+      "chambres": 1,
       "sallesDeBain": 2,
       "images": [
         "../../../images/bureau4.jpg"
@@ -392,7 +392,7 @@
       "ville": "Bordeaux",
       "prix": 1200,
       "surface": 70,
-      "chambres": 0,
+      "chambres": 1,
       "sallesDeBain": 1,
       "images": [
         "../../../images/bureau5.jpg"
@@ -430,7 +430,7 @@
       "ville": "Lourdes",
       "prix": 1100,
       "surface": 80,
-      "chambres": 0,
+      "chambres": 1,
       "sallesDeBain": 2,
       "images": [
         "../../../images/bureau6.jpg"
