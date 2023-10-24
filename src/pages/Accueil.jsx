@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import ListMarkers from '../components/ListMarkers/ListMarkers';
 import MapComponent from '../components/Map/MapComponent';
-import annonces from '../data/annonces.json';
+import annonces from '../jsonData/annonces.json';
 
 export const Context = React.createContext();
 
