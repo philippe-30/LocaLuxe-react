@@ -61,7 +61,7 @@ const MapComponent = ({ offres, locationVisible, setLocationVisible }) => {
 
 
   return (
-    <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: '500px', width: '60%' }} >
+    <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: '600px', width: '60%' }} >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
