@@ -3,7 +3,7 @@ import './container.css'
 
 const Container = ({ locationVisible }) => {
     if (!locationVisible) {
-        return null; // Ou renvoyez un composant de chargement ou un message d'erreur
+        return null; 
     }
     return (
         <div className='containerOffre'>
