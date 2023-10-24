@@ -25,10 +25,10 @@
       "titre": "Maison",
       "description": "Maison entièrement équipée pour vos besoins professionnels.",
       "localisation": {
-        "latitude": 48.8566,
-        "longitude": 2.3522
+        "latitude": 48.390394,
+        "longitude": -4.486076
       },
-      "ville": "Paris",
+      "ville": "Brest",
       "prix": 5000,
       "surface": 225,
       "chambres": 4,
@@ -181,9 +181,9 @@
         "longitude": 1.4426
       },
       "ville": "Toulouse",
-      "prix": 500,
-      "surface": 80,
-      "chambres": 0,
+      "prix": 800,
+      "surface": 120,
+      "chambres": 4,
       "sallesDeBain": 1,
       "images": [
         "../../../images/maison5.jpg"
@@ -212,13 +212,13 @@
     {
       "id": 12,
       "type": "Appartement",
-      "titre": "Appartement au cœur de Paris",
+      "titre": "Appartement au cœur de Orléans",
       "description": "Appartement élégant près de la Tour Eiffel et des Champs-Élysées.",
       "localisation": {
-        "latitude": 48.8588443,
-        "longitude": 2.2943506
+        "latitude": 47.902964,
+        "longitude": 1.909251
       },
-      "ville": "Paris",
+      "ville": "Orléans",
       "prix": 1600,
       "surface": 90,
       "chambres": 2,
@@ -269,13 +269,13 @@
     {
       "id": 15,
       "type": "Maison",
-      "titre": "Belle maison à Lons",
-      "description": "Maison de charme avec jardin et piscine à Lons.",
+      "titre": "Belle maison à Lyon",
+      "description": "Maison de charme avec jardin et piscine.",
       "localisation": {
-        "latitude": 43.3297,
-        "longitude": -0.4318
+        "latitude": 45.75,
+        "longitude": 4.85
       },
-      "ville": "Lons",
+      "ville": "Lyon",
       "prix": 1600,
       "surface": 150,
       "chambres": 4,

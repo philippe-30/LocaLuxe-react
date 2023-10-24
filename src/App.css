@@ -1,8 +1,9 @@
 * {
-  text-decoration: none ;
+  text-decoration: none;
   text-decoration-style: none;
 
 }
+
 .App {
   text-align: center;
 }
@@ -19,12 +20,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #282c34;
+  min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: red;
 }
@@ -37,23 +38,43 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.container{
+
+.container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   margin-top: 2%;
 }
-MapContainer{
+
+MapContainer {
   border: #282c34 solid 2px;
   border-radius: 20px;
 }
-.containerTotal{
+
+.containerTotal {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   width: 100%;
 }
 
+.formContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  margin-left: 30%;
+  width: 30%;
+  border: solid 2px rgb(126, 111, 240);
+  border-radius: 2%;
+  margin-bottom: 1%;
+}
+
+.formContact>div {
+  margin: 3%;
+}

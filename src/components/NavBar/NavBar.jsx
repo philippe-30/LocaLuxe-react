@@ -11,8 +11,8 @@ const NavBar = () => {
       </div>
       <nav>
         <Link className='aHref' to='/'>Accueil</Link>
-        <Link className='aHref' to='/about'>About</Link>
-        <Link  className='aHref' to='/contact'>Contact</Link>
+        <Link className='aHref' to='/about'>A propos</Link>
+        <Link className='aHref' to='/contact'>Contact</Link>
         <Link className='aHref' to='/connexion'>Se connecter</Link>
       </nav>
     </header>

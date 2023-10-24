@@ -1,13 +1,15 @@
-.offre{
+.offre {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     /* flex-wrap: wrap; */
     width: 60%;
 
 }
-.mainOffre{
+
+.mainOffre {
     display: flex;
-    flex-direction:column ;
-      width: 40%;
+    flex-direction: column;
+    width: 40%;
 }

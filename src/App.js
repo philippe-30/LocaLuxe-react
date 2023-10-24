@@ -34,7 +34,7 @@ function App() {
     <>
       <div className='containerTotal'>
         <RouterProvider router={router} />
-      <Footer/>
+        <Footer />
       </div>
     </>
   );

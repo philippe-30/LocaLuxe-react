@@ -1,16 +1,30 @@
 .imageOffre {
-    width: 40%;
-    height: 80%;
-    object-fit: cover;
-    overflow: hidden;
-  }
+  width: 40%;
+  height: 80%;
+  object-fit: cover;
+  overflow: hidden;
+}
 
 .containerList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px 0;
-      flex-wrap: wrap;
-      width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 0;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.ville {
+  color: red;
+}
+
+.type {
+  color: blue;
+}
+
+.containerOffre {
+  border: solid 2px rgb(187, 12, 112);
+  border-radius: 2%;
+  margin-bottom: 1%;
 }

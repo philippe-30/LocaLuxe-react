@@ -30,7 +30,7 @@ const About = () => {
             </p>
 
             <h4>Recherche Personnalisée</h4>
-            
+
             <p>Nous comprenons que chaque client est unique, c'est pourquoi nous proposons une approche
                 personnalisée pour vous aider à trouver la propriété parfaite. Que vous recherchiez une
                 maison de vacances, un investissement immobilier ou un lieu de résidence permanent, nous
