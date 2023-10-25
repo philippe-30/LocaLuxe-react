@@ -7,29 +7,20 @@ import "leaflet/dist/leaflet.css";
 const MapComponent = ({ offres, locationVisible, setLocationVisible }) => {
   const [map, setMap] = useState(null);
 
-  // Créez des icônes personnalisées pour chaque type d'offre
-  const maisonIcon = L.icon({
-    iconUrl: '../../../images/house.png',
-    iconSize: [20, 20],
-    iconAnchor: [16, 32],
-  });
 
-  const appartementIcon = L.icon({
-    iconUrl: '../../../images/appartement.png',
-    iconSize: [20, 20],
-    iconAnchor: [16, 32],
-  });
-  const bureauIcon = L.icon({
-    iconUrl: '../../../images/bureau.png',
-    iconSize: [15, 15],
-    iconAnchor: [16, 32],
-  });
-
-  const chaletIcon = L.icon({
-    iconUrl: 'https://us.123rf.com/450wm/julimurt/julimurt2010/julimurt201000042/156846370-paysage-d-hiver-maison-dans-les-bois-maison-parmi-la-for%C3%AAt-d-hiver-illustration-vectorielle.jpg?ver=6',
-    iconSize: [20, 20],
-    iconAnchor: [16, 32],
-  });
+  const createCustomIcon = (iconUrl, iconSize) => {
+    return L.icon({
+      iconUrl: iconUrl,
+      iconSize: iconSize,
+      iconAnchor: [16, 32],
+    });
+  };
+  
+  // Utilisation de la fonction pour créer des icônes personnalisées
+  const maisonIcon = createCustomIcon('../../../images/house.png', [20, 20]);
+  const appartementIcon = createCustomIcon('../../../images/appartement.png', [20, 20]);
+  const bureauIcon = createCustomIcon('../../../images/bureau.png', [15, 15]);
+  const chaletIcon = createCustomIcon('https://us.123rf.com/450wm/julimurt/julimurt2010/julimurt201000042/156846370-paysage-d-hiver-maison-dans-les-bois-maison-parmi-la-for%C3%AAt-d-hiver-illustration-vectorielle.jpg?ver=6', [20, 20]);
 
   // Fonction pour filtrer les marqueurs visibles en fonction de la carte
   const filterMarkers = (map) => {
