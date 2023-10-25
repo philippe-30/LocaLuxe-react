@@ -2,7 +2,7 @@ import React from 'react'
 import './container.css'
 
 const Container = ({ locationVisible }) => {
-    if (!locationVisible) {
+    if (!locationVisible || locationVisible.length === 0) {
         return null; 
     }
     return (

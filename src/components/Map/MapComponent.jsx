@@ -22,6 +22,7 @@ const MapComponent = ({ offres, locationVisible, setLocationVisible }) => {
   const bureauIcon = createCustomIcon('../../../images/bureau.png', [15, 15]);
   const chaletIcon = createCustomIcon('https://us.123rf.com/450wm/julimurt/julimurt2010/julimurt201000042/156846370-paysage-d-hiver-maison-dans-les-bois-maison-parmi-la-for%C3%AAt-d-hiver-illustration-vectorielle.jpg?ver=6', [20, 20]);
 
+
   // Fonction pour filtrer les marqueurs visibles en fonction de la carte
   const filterMarkers = (map) => {
     const visibleMarkers = offres.filter(offre => map.getBounds().contains([offre.localisation.latitude, offre.localisation.longitude]));
