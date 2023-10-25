@@ -29,15 +29,14 @@ const MapComponent = ({ offres, locationVisible, setLocationVisible }) => {
     setLocationVisible(visibleMarkers);
   };
 
-
+    // Effect pour initialiser la carte et les marqueurs
   useEffect(() => {
     if (map) {
+      filterMarkers(map);
       map.on('zoomend', () => filterMarkers(map));
       map.on('moveend', () => filterMarkers(map));
-      filterMarkers(map);
     }
-  }, [map, offres, , filterMarkers]);
-
+  }, [map, offres]);
 
 
   // Custom hook pour obtenir la carte actuelle
@@ -51,6 +50,7 @@ const MapComponent = ({ offres, locationVisible, setLocationVisible }) => {
     return null;
   };
 
+ 
 
   return (
     <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: '600px', width: '60%' }} >
