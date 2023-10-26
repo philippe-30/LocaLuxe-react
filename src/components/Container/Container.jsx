@@ -3,7 +3,7 @@ import './container.css'
 
 const Container = ({ locationVisible }) => {
     if (!locationVisible || locationVisible.length === 0) {
-        return null; 
+        return null;
     }
     return (
         <div className='containerOffre'>
